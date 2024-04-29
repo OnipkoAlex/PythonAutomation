@@ -1,21 +1,15 @@
 def process(*numbers):
+    current = 1
 
-    if len(numbers) > 1:
-        result = 1
-
-        for num in numbers:
-            result *= int(num)
-
-        current = str(result)
-    else:
-        current = numbers[0]
+    for num in numbers:
+        current *= int(num)
 
     result_list = []
 
     print(current)
-    while int(current) > 0:
-        result_list.append(int(current[-1:]))
-        current = current[:-1]
+    while current != 0:
+        result_list.append(current % 10)
+        current = current // 10
 
     return result_list[::-1]
 
