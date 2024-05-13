@@ -1,4 +1,4 @@
-from to_test import simple_checking
+from .to_test import simple_checking
 
 
 def test_not_prime():

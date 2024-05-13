@@ -1,5 +1,5 @@
 import pytest
-from to_test import some_action
+from .to_test import some_action
 
 
 def test_zero():

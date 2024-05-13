@@ -1,4 +1,4 @@
-from to_test import hide_action
+from .to_test import hide_action
 
 
 def test_short_string():
