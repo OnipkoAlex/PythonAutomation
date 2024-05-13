@@ -1,4 +1,4 @@
-from eighth_lesson import to_test
+import to_test
 
 
 def test_short_string():

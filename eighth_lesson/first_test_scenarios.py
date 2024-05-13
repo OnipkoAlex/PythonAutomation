@@ -1,5 +1,5 @@
-from eighth_lesson import to_test
 import pytest
+import to_test
 
 
 def test_zero():
