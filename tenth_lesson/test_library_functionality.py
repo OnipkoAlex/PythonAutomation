@@ -20,7 +20,7 @@ def test_finding_book_by_title(create_library):
 
 def test_removing_book_by_title(create_library):
     """"Checking if removing book works"""
-    book = Book("The Never-ending Story", "Michael Ende")
+    book = Book("Bible", "Unknown")
     create_library.add_book(book)
     create_library.remove_book(book)
-    assert create_library.find_book_by_title("The Never-ending Story") is None
+    assert create_library.find_book_by_title("Bible") is None

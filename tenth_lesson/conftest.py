@@ -2,7 +2,7 @@ import pytest
 from .library import Library, Book
 
 
-@pytest.fixture(scope="session", autouse=True)
+@pytest.fixture(scope="function", autouse=True)
 def create_library():
     library = Library()
     library.add_book(Book("Harry Potter", "J. K. Rowling"))
